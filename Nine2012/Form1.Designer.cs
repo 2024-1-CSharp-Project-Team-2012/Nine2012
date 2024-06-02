@@ -315,6 +315,8 @@
             this.pictureBoxPink2.TabIndex = 14;
             this.pictureBoxPink2.TabStop = false;
             this.pictureBoxPink2.Tag = "Pink";
+            this.pictureBoxPink2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPink2_MouseClick);
+
             // 
             // pictureBoxPink3
             // 
@@ -327,6 +329,8 @@
             this.pictureBoxPink3.TabIndex = 15;
             this.pictureBoxPink3.TabStop = false;
             this.pictureBoxPink3.Tag = "Pink";
+            this.pictureBoxPink3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPink3_MouseClick);
+
             // 
             // pictureBoxPink4
             // 
@@ -339,6 +343,8 @@
             this.pictureBoxPink4.TabIndex = 16;
             this.pictureBoxPink4.TabStop = false;
             this.pictureBoxPink4.Tag = "Pink";
+            this.pictureBoxPink4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPink4_MouseClick);
+
             // 
             // pictureBoxPink5
             // 
@@ -351,6 +357,8 @@
             this.pictureBoxPink5.TabIndex = 17;
             this.pictureBoxPink5.TabStop = false;
             this.pictureBoxPink5.Tag = "Pink";
+            this.pictureBoxPink5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPink5_MouseClick);
+
             // 
             // pictureBoxPink6
             // 
@@ -363,6 +371,8 @@
             this.pictureBoxPink6.TabIndex = 18;
             this.pictureBoxPink6.TabStop = false;
             this.pictureBoxPink6.Tag = "Pink";
+            this.pictureBoxPink6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPink6_MouseClick);
+
             // 
             // pictureBoxPink7
             // 
@@ -375,6 +385,8 @@
             this.pictureBoxPink7.TabIndex = 19;
             this.pictureBoxPink7.TabStop = false;
             this.pictureBoxPink7.Tag = "Pink";
+            this.pictureBoxPink7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPink7_MouseClick);
+
             // 
             // pictureBoxPink8
             // 
@@ -387,6 +399,8 @@
             this.pictureBoxPink8.TabIndex = 20;
             this.pictureBoxPink8.TabStop = false;
             this.pictureBoxPink8.Tag = "Pink";
+            this.pictureBoxPink8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPink8_MouseClick);
+
             // 
             // pictureBoxPink9
             // 
@@ -399,6 +413,8 @@
             this.pictureBoxPink9.TabIndex = 21;
             this.pictureBoxPink9.TabStop = false;
             this.pictureBoxPink9.Tag = "Pink";
+            this.pictureBoxPink9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPink9_MouseClick);
+
             // 
             // pictureBoxBlank00
             // 

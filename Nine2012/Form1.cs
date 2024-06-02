@@ -24,7 +24,9 @@ namespace Nine2012
         private const uint MOUSEEVENTF_LEFTDOWN = 0x0002;      // The left button is down.
         private const uint MOUSEEVENTF_LEFTUP = 0x0004;
         private Point startPoint;
-        private Point picture00;
+
+        enum tagType {Blank=0, Green=1, Pink=2};
+
         public Form1()
         {
             InitializeComponent();
@@ -75,21 +77,67 @@ namespace Nine2012
             pictureBoxGreen9.Image = null;
         }
 
-
         private void pictureBoxPink1_MouseClick(object sender, MouseEventArgs e)
         {
             pictureBoxPink1.Image = null;
+        }
+
+        private void pictureBoxPink2_MouseClick(object sender, MouseEventArgs e)
+        {
+            pictureBoxPink2.Image = null;
+        }
+        private void pictureBoxPink3_MouseClick(object sender, MouseEventArgs e)
+        {
+            pictureBoxPink3.Image = null;
+        }
+        private void pictureBoxPink4_MouseClick(object sender, MouseEventArgs e)
+        {
+            pictureBoxPink4.Image = null;
+        }
+        private void pictureBoxPink5_MouseClick(object sender, MouseEventArgs e)
+        {
+            pictureBoxPink5.Image = null;
+        }
+        private void pictureBoxPink6_MouseClick(object sender, MouseEventArgs e)
+        {
+            pictureBoxPink6.Image = null;
+        }
+        private void pictureBoxPink7_MouseClick(object sender, MouseEventArgs e)
+        {
+            pictureBoxPink7.Image = null;
+        }
+        private void pictureBoxPink8_MouseClick(object sender, MouseEventArgs e)
+        {
+            pictureBoxPink8.Image = null;
+        }
+        private void pictureBoxPink9_MouseClick(object sender, MouseEventArgs e)
+        {
+            pictureBoxPink9.Image = null;
         }
 
         private void pictureBoxBlank00_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if(pictureBoxGreen1.Image == null)
             {
+                pictureBoxBlank00.Tag = tagType.Green;
                 pictureBoxBlank00.Image = Properties.Resources.Green;
             }
 
             if (pictureBoxPink1.Image == null)
             {
+                pictureBoxBlank00.Tag = tagType.Pink;
+                pictureBoxBlank00.Image = Properties.Resources.Pink;
+            }
+
+            if (pictureBoxGreen2.Image == null)
+            {
+                pictureBoxBlank00.Tag = tagType.Green;
+                pictureBoxBlank00.Image = Properties.Resources.Green;
+            }
+
+            if (pictureBoxPink2.Image == null)
+            {
+                pictureBoxBlank00.Tag = tagType.Pink;
                 pictureBoxBlank00.Image = Properties.Resources.Pink;
             }
         }
@@ -101,17 +149,16 @@ namespace Nine2012
 
         private void pictureBoxBlank01_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (pictureBoxBlank00.Image == null)
+            if (pictureBoxBlank00.Image == null && (int)pictureBoxBlank00.Tag== 1)
             {
+                pictureBoxBlank01.Tag = tagType.Green;
                 pictureBoxBlank01.Image = Properties.Resources.Green;
             }
-        }
 
-        private void pictureBoxBlank07_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            if (pictureBoxBlank00.Image == null)
+            if (pictureBoxBlank00.Image == null && (int)pictureBoxBlank00.Tag == 2)
             {
-                pictureBoxBlank07.Image = Properties.Resources.Green;
+                pictureBoxBlank01.Tag = tagType.Pink;
+                pictureBoxBlank01.Image = Properties.Resources.Pink;
             }
         }
 
@@ -122,9 +169,22 @@ namespace Nine2012
 
         private void pictureBoxBlank02_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (pictureBoxBlank01.Image == null)
+            if (pictureBoxBlank01.Image == null && (int)pictureBoxBlank01.Tag == 1)
             {
                 pictureBoxBlank02.Image = Properties.Resources.Green;
+            }
+
+            if (pictureBoxBlank01.Image == null && (int)pictureBoxBlank01.Tag == 2)
+            {
+                pictureBoxBlank02.Image = Properties.Resources.Pink;
+            }
+        }
+
+        private void pictureBoxBlank07_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (pictureBoxBlank00.Image == null)
+            {
+                pictureBoxBlank07.Image = Properties.Resources.Green;
             }
         }
     }
