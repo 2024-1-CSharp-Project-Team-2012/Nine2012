@@ -346,7 +346,7 @@ namespace Nine2012
                 pictureBoxBlank03.Image = Properties.Resources.Green;
             }
 
-            else if (pictureBoxBlank13Image == null || (int)pictureBoxBlank13.Tag == 2)
+            else if (pictureBoxBlank13.Image == null || (int)pictureBoxBlank13.Tag == 2) //수정
             {
                 pictureBoxBlank13.Tag = tagType.Blank;
                 pictureBoxBlank03.Tag = tagType.Pink;
